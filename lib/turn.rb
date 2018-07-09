@@ -12,6 +12,10 @@ def input_to_index(input)
   input.to_i - 1
 end
 
+# #move method
+def move(board, index, token = "X")
+  board[index] = token
+
 # #valid_move? method determins if the user input is:
 #   1) a valid position on the board
 #   2) not taken
