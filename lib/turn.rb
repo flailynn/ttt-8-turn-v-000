@@ -15,6 +15,8 @@ end
 # #move method
 def move(board, index, token = "X")
   board[index] = token
+end
+
 
 # #valid_move? method determins if the user input is:
 #   1) a valid position on the board
