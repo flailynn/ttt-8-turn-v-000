@@ -21,7 +21,7 @@ def valid_move?(board, index)
   end
 end
 
-# re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
+# #position_taken? determines if the current index is occupied with an X or O
 def position_taken? (board, index)
   if board[index].nil? || board[index] == "" || board[index] == " "
     false
@@ -34,4 +34,3 @@ end
 def turn(board)
   puts "Please enter 1-9:"
 end
-
