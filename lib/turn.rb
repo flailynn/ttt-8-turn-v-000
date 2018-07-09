@@ -12,7 +12,10 @@ def input_to_index(input)
   input.to_i - 1
 end
 
-# code your #valid_move? method here
+# #valid_move? method determins if the user input is:
+#   1) a valid position on the board
+#   2) not taken
+
 def valid_move?(board, index)
   if index.between?(0,8)
     !position_taken?(board, index)
